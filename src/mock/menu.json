@@ -1,0 +1,46 @@
+[{
+		"id": "0",
+		"name": "",
+    "icon": "icon-home.png",
+    "url": "/"
+	},
+	{
+		"id": "1",
+		"name": "Lego",
+		"icon": "icon-lego.png",
+    "url": "/lego"
+	},
+	{
+		"id": "2",
+		"name": "Ciclismo",
+    "icon": "icon-lego.png",
+    "url": "/bike"
+		"sub": [{
+        "id": "21",
+				"name": "Squadra",
+        "url": "/team"
+			},
+			{
+        "id": "22",
+				"name": "Gare",
+        "url": "/race"
+			},
+			{
+        "id": "23",
+				"name": "Prossimi giri",
+        "url": "/events"
+			},
+			{
+        "id": "24",
+				"name": "Strava",
+        "url": "/strava"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"name": "Contatti",
+    "icon": "icon-contact.png",
+    "url": "/contacts"
+	}
+]
