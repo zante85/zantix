@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Menu } from './models/menu';
-import { MenuService } from './services/menuservice';
+import { Menu } from './menu/menu';
+import { MenuService } from './menu/menuservice';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +9,14 @@ import { MenuService } from './services/menuservice';
 })
 export class AppComponent {
   title = 'zantix';
-  menus: Menu[] = [];
-  menu: Menu;
-  ngOnInit() {
-        this.menu = new Menu();
-        this.menu.id="10";
-        this.menu.name="prova";
-        this.menu.link="/";
-        this.menu.icon = "colore.jpg";
-        this.menus[0]=this.menu;
+  menus: Menu[];
+  constructor(private menuservice: MenuService){
+
+      this.menuservice.getMenu().subscribe((menus: Array<Menu>) => {
+          console.log(menus);
+          this.menus = menus;
+      });
+
   }
   
 }

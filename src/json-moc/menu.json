@@ -1,39 +1,49 @@
 [{
 		"id": "0",
-		"name": "",
+		"name": "Home",
     "icon": "icon-home.png",
-    "url": "/"
+    "url": "/",
+    "sub": null
 	},
 	{
 		"id": "1",
 		"name": "Lego",
 		"icon": "icon-lego.png",
-    "url": "/lego"
+    "url": "/lego",
+    "sub": null
 	},
 	{
 		"id": "2",
 		"name": "Ciclismo",
     "icon": "icon-lego.png",
-    "url": "/bike"
+    "url": "/bike",
 		"sub": [{
         "id": "21",
 				"name": "Squadra",
-        "url": "/team"
+        "url": "/team",
+        "icon": null,
+        "sub": null
 			},
 			{
         "id": "22",
 				"name": "Gare",
-        "url": "/race"
+        "url": "/race",
+        "icon": null,
+        "sub": null
 			},
 			{
         "id": "23",
 				"name": "Prossimi giri",
-        "url": "/events"
+        "url": "/events",
+        "icon": null,
+        "sub": null
 			},
 			{
         "id": "24",
 				"name": "Strava",
-        "url": "/strava"
+        "url": "/strava",
+        "icon": null,
+        "sub": null
 			}
 		]
 	},
@@ -41,6 +51,7 @@
 		"id": "3",
 		"name": "Contatti",
     "icon": "icon-contact.png",
-    "url": "/contacts"
+    "url": "/contacts",
+    "sub": null
 	}
 ]

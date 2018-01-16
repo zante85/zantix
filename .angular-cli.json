@@ -10,6 +10,7 @@
       "assets": [
         "assets",
         "img",
+        "json-moc",
         "favicon.ico"
       ],
       "index": "index.html",
