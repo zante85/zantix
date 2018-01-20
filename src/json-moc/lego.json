@@ -1,0 +1,38 @@
+[{
+		"id": "0",
+		"title": "Home",
+    "description": "icon-home.png",
+    "background-image": "/",
+    "icon": null,
+    "text": null,
+    "projects": : [{
+        "id": "21",
+				"name": "Squadra",
+        "url": "/team",
+        "icon": null,
+        "sub": null
+			},
+			{
+        "id": "22",
+				"name": "Gare",
+        "url": "/race",
+        "icon": null,
+        "sub": null
+			},
+			{
+        "id": "23",
+				"name": "Prossimi giri",
+        "url": "/events",
+        "icon": null,
+        "sub": null
+			},
+			{
+        "id": "24",
+				"name": "Strava",
+        "url": "/strava",
+        "icon": null,
+        "sub": null
+			}
+		]
+	}
+]

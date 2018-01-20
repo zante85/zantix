@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
