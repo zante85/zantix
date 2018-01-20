@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContainerComponent } from './container/container.component';
+import { ContainerModule } from './container/container.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ContainerComponent } from './container/container.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    ContainerModule
   ],
   providers: [
     MenuService

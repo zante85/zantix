@@ -1,37 +1,35 @@
 [{
-		"id": "0",
+		"id": "1",
 		"title": "Home",
     "description": "icon-home.png",
     "background-image": "/",
     "icon": null,
     "text": null,
-    "projects": : [{
+    "elements": [{
+        "id": "10",
+				"title": "Presepio Lego",
+        "description": "icon-home.png",
+        "background-image": "/",
+        "icon": null,
+        "text": null,
+        "images": [
+          "img/lego1.jpg",
+          "img/lego2.jpg",
+          "img/lego3.jpg" 
+        ]
+			},
+			{
         "id": "21",
-				"name": "Squadra",
-        "url": "/team",
+				"title": "Tableau Mariage",
+        "description": "icon-home.png",
+        "background-image": "/",
         "icon": null,
-        "sub": null
-			},
-			{
-        "id": "22",
-				"name": "Gare",
-        "url": "/race",
-        "icon": null,
-        "sub": null
-			},
-			{
-        "id": "23",
-				"name": "Prossimi giri",
-        "url": "/events",
-        "icon": null,
-        "sub": null
-			},
-			{
-        "id": "24",
-				"name": "Strava",
-        "url": "/strava",
-        "icon": null,
-        "sub": null
+        "text": null,
+        "images": [
+          "img/lego1.jpg",
+          "img/lego2.jpg",
+          "img/lego3.jpg" 
+        ]
 			}
 		]
 	}
