@@ -2,14 +2,14 @@
 		"id": "1",
 		"title": "Home",
     "description": "icon-home.png",
-    "background-image": "/",
+    "backgroundimage": "/",
     "icon": null,
     "text": null,
     "elements": [{
         "id": "10",
 				"title": "Presepio Lego",
         "description": "icon-home.png",
-        "background-image": "/",
+        "backgroundimage": "/",
         "icon": null,
         "text": null,
         "images": [
@@ -22,7 +22,7 @@
         "id": "21",
 				"title": "Tableau Mariage",
         "description": "icon-home.png",
-        "background-image": "/",
+        "backgroundimage": "/",
         "icon": null,
         "text": null,
         "images": [
