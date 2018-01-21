@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -7,5 +7,18 @@ import {Component} from '@angular/core';
 })
 
 export class ContainerComponent {
+
+  page: string;
+
+  constructor(){
+
+      this.page='lego';
+
+  }
+
+  @Input()
+  set setPage(page: string) {
+    this.page = (page && page.trim());
+  }
   
 }

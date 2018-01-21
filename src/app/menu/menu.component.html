@@ -8,7 +8,9 @@
          <div *ngFor="let menu of menus">
             <div *ngIf="!menu.sub;else other_content">
                <li class="nav-item" >
-                  <a class="nav-link" id="{{menu.id}}" href="{{menu.link}}">{{menu.name}}<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" id="{{menu.id}}" href="#" (click)="changeContainer(menu.name)">{{menu.name}}
+                  <span class="sr-only">(current)</span>
+                  </a>
                </li>
             </div>
             <ng-template #other_content>

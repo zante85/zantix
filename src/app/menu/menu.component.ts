@@ -19,4 +19,9 @@ export class MenuComponent {
       });
 
   }
+
+  changeContainer(name:string){
+    console.log(name);
+
+  }
 }
