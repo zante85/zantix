@@ -10,7 +10,7 @@ export const AppConfig: IAppConfig = {
     error404: '404'
   },
   endpoints: {
-    zantix: 'http://localhost:4200/zantix'
+    zantix: 'http://localhost:4200/#'
   },
   repositoryURL: 'https://github.com/zante85/zantix'
 };

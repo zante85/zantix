@@ -1,14 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule }      from '@angular/http';
-import {APP_CONFIG, AppConfig} from './config/app.config';
+import { HttpModule } from '@angular/http';
+import { APP_CONFIG, AppConfig } from './config/app.config';
 
 import { MenuService } from './menu/menuservice';
 import { AppComponent } from './app.component';
 
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContainerComponent } from './container/container.component';
 import { ContainerModule } from './container/container.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './error404/error-404.component';
@@ -18,7 +17,6 @@ import { Error404Component } from './error404/error-404.component';
     AppComponent,
     FooterComponent,
     MenuComponent,
-    ContainerComponent,
     Error404Component
   ],
   imports: [
@@ -28,7 +26,7 @@ import { Error404Component } from './error404/error-404.component';
     AppRoutingModule
   ],
   providers: [
-    {provide: APP_CONFIG, useValue: AppConfig},
+    { provide: APP_CONFIG, useValue: AppConfig },
     MenuService
   ],
   bootstrap: [AppComponent]

@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { ContainerRoutingModule } from './container-routing.module';
 
 
@@ -14,15 +13,14 @@ import { ContainerComponent } from './container.component';
   declarations: [
     GalleryComponent,
     ContactsComponent,
-    HomeComponent
+    HomeComponent,
+    ContainerComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     FormsModule,
-    HttpModule,
     ReactiveFormsModule,
     ContainerRoutingModule
-
   ],
   exports: [
     GalleryComponent,
