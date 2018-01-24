@@ -14,12 +14,12 @@ export class ContactsComponent {
   post:any;                     // A property for our submitted form
   description:string = '';
   name:string = '';
-  titleAlert:string = 'This field is required';
+  titleAlert:string = 'Campo obbligatorio';
 
   constructor(private fb: FormBuilder) { 
 
     this.rForm = fb.group({
-      'name' : [null, Validators.required],
+      'name' : [null, Validators.compose([Validators.required, Validators.minLength(3)])],
       'description' : [null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
       'validate' : ''
     });
@@ -33,7 +33,7 @@ export class ContactsComponent {
 
           if (validate == '1') {
               this.rForm.get('name').setValidators([Validators.required, Validators.minLength(3)]);
-              this.titleAlert = 'You need to specify at least 3 characters';
+              this.titleAlert = 'Devi inserire almeno 3 caratteri';
           } else {
               this.rForm.get('name').setValidators(Validators.required);
           }
