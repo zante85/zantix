@@ -1,6 +1,29 @@
-<div class="jumbotron">
-    <div class="container text-center">
-        HOME
+<div *ngFor="let lego of legos">
+    <div class="container gallery-container">
+
+        <h1>{{lego.title}}</h1>
+
+        <p class="page-description text-center">{{lego.description}}</p>
+
+        <ngb-accordion [closeOthers]="true" activeIds="ngb-panel-0">
+            <ngb-panel *ngFor="let argument of lego.elements;" title="{{argument.title}}">
+                <ng-template ngbPanelContent>
+                    {{argument.description}}
+
+                    <div class="tz-gallery">
+
+                        <div class="row">
+
+                            <div *ngFor="let image of argument.images" class="col-sm-12 col-md-4">
+                                <a class="lightbox" href="{{image}}">
+                                    <img src="{{image}}" alt="Image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
+
     </div>
-  </div>
-    
+</div>
