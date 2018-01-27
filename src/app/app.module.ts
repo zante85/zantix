@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContainerModule } from './container/container.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './error404/error-404.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { Error404Component } from './error404/error-404.component';
     BrowserModule,
     HttpModule,
     ContainerModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
   providers: [
     { provide: APP_CONFIG, useValue: AppConfig },

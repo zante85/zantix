@@ -1,6 +1,7 @@
 import {Component, Inject} from '@angular/core';
 import { LegoService } from './legoservice';
 import { Lego } from './lego';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-lego',

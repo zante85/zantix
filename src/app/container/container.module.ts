@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ContainerComponent } from './container.component';
 import { LegoComponent } from './lego/lego.component';
 import { LegoService } from './lego/legoservice';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LegoService } from './lego/legoservice';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ContainerRoutingModule
+    ContainerRoutingModule,
+    NgbModule
   ],
   providers: [
     LegoService

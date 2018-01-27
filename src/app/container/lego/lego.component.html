@@ -8,64 +8,22 @@
         <ngb-accordion [closeOthers]="true" activeIds="ngb-panel-0">
             <ngb-panel *ngFor="let argument of lego.elements;" title="{{argument.title}}">
                 <ng-template ngbPanelContent>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
-                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                    you probably haven't heard of them accusamus labore sustainable VHS.
-                </ng-template>
-            </ngb-panel>
-        </ngb-accordion>
+                    {{argument.description}}
 
+                    <div class="tz-gallery">
 
+                        <div class="row">
 
-
-
-
-        <div *ngFor="let argument of lego.elements;let first = first;" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="card">
-
-                <div class="card-header" role="tab" id="headingOne">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            {{argument.title}}
-                        </a>
-                    </h5>
-                </div>
-                <div id="collapseOne" class="collapse" [ngClass]="{'show':first}" role="tabpanel" aria-labelledby="headingOne">
-                    <div>{{argument.description}}</div>
-                    <div class="card-block">
-                        <div class="tz-gallery">
-
-                            <div class="row">
-
-                                <div class="col-sm-12 col-md-4">
-                                    <a class="lightbox" href="img/lego1.jpg">
-                                        <img src="img/lego1.jpg" alt="Bridge">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <a class="lightbox" href="img/lego2.jpg">
-                                        <img src="img/lego2.jpg" alt="Park">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <a class="lightbox" href="img/lego3.jpg">
-                                        <img src="img/lego3.jpg" alt="Tunnel">
-                                    </a>
-                                </div>
-                                <div class="col-sm-12 col-md-8">
-                                    <a class="lightbox" href="img/lego4.jpg">
-                                        <img src="img/lego4.jpg" alt="Traffic">
-                                    </a>
-                                </div>
+                            <div *ngFor="let image of argument.images" class="col-sm-12 col-md-4">
+                                <a class="lightbox" href="{{image}}">
+                                    <img src="{{image}}" alt="Image">
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
 
     </div>
 </div>
