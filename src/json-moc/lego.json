@@ -1,14 +1,14 @@
 [{
 		"id": "1",
-		"title": "Home",
-    "description": "icon-home.png",
+		"title": "Mondo Lego",
+    "description": "Qui di seguito alcune mie creazioni Lego",
     "backgroundimage": "/",
     "icon": null,
     "text": null,
     "elements": [{
         "id": "10",
 				"title": "Presepio Lego",
-        "description": "icon-home.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
         "icon": null,
         "text": null,
@@ -19,9 +19,9 @@
         ]
 			},
 			{
-        "id": "21",
+        "id": "20",
 				"title": "Tableau Mariage",
-        "description": "icon-home.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
         "icon": null,
         "text": null,

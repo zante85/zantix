@@ -5,6 +5,7 @@ import {ContactsComponent} from './contacts/contacts.component';
 import {GalleryComponent} from './gallery/gallery.component';
 import {ContainerComponent} from './container.component';
 import { HomeComponent } from './home/home.component';
+import { LegoComponent } from './lego/lego.component';
 
 const containerRoutes: Routes = [
   {
@@ -13,7 +14,7 @@ const containerRoutes: Routes = [
     children: [
       {path: '', component: HomeComponent},
       {path: 'contacts', component: ContactsComponent},
-      {path: 'lego', component: GalleryComponent},
+      {path: 'lego', component: LegoComponent},
       {path: 'bike', component: GalleryComponent}
     ]
   }

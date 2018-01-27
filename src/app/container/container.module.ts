@@ -8,13 +8,16 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
 import { ContainerComponent } from './container.component';
+import { LegoComponent } from './lego/lego.component';
+import { LegoService } from './lego/legoservice';
 
 @NgModule({
   declarations: [
     GalleryComponent,
     ContactsComponent,
     HomeComponent,
-    ContainerComponent
+    ContainerComponent,
+    LegoComponent
   ],
   imports: [
     CommonModule,
@@ -22,10 +25,14 @@ import { ContainerComponent } from './container.component';
     ReactiveFormsModule,
     ContainerRoutingModule
   ],
+  providers: [
+    LegoService
+  ],
   exports: [
     GalleryComponent,
     ContactsComponent,
-    HomeComponent
+    HomeComponent,
+    LegoComponent
   ]
 })
 
