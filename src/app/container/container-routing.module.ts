@@ -19,8 +19,8 @@ const containerRoutes: Routes = [
       {path: 'contacts', component: ContactsComponent},
       {path: 'lego', component: LegoComponent},
       {path: 'bike', component: GalleryComponent},
-      {path: 'team', component: TeamComponent}
-      {path: 'race', component: RaceComponent}
+      {path: 'team', component: TeamComponent},
+      {path: 'race', component: RaceComponent},
       {path: 'events', component: EventsComponent}
     ]
   }

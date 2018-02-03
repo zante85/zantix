@@ -19,7 +19,8 @@
         "position": null,
         "time": null,
         "images": [
-          "img/lego1.jpg"        ]
+          "img/lego1.jpg"
+        ]
       },
       {
         "id": "970",
@@ -30,6 +31,7 @@
         "icon": null,
         "text": null,
         "position": null,
+        "route": null,
         "time": null,
         "images": [
           "img/lego1.jpg"
@@ -40,22 +42,23 @@
   {
     "id": "20",
     "type": 2,
-    "title": "Mondo Lego",
-    "description": "Qui di seguito alcune mie creazioni Lego",
+    "title": "Gare",
+    "description": "Ecco le gare amatoriali che devo fare",
     "backgroundimage": "/",
     "icon": null,
     "text": null,
     "elements": [
       {
-        "id": "970",
+        "id": "990",
         "title": "GF Eddy Merckx",
         "date": "01/01/2010",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
+        "description": "",
         "backgroundimage": "/",
         "icon": null,
         "text": null,
         "position": 100,
-        "time": "1h.30min",
+        "route": null,
+        "time": "3h.30min",
         "images": [
           "img/lego1.jpg",
           "img/lego2.jpg",
@@ -67,21 +70,26 @@
   {
     "id": "30",
     "type": 3,
-    "title": "Mondo Lego",
-    "description": "Qui di seguito alcune mie creazioni Lego",
+    "title": "Prossimi appuntamenti bici",
+    "description": "Qui di seguito alcuni eventi organizzati da me ai quali potete aggiungervi senza impegno",
     "backgroundimage": "/",
     "icon": null,
     "text": null,
     "elements": [
       {
-        "id": "970",
-        "title": "GF Eddy Merckx",
+        "id": "990",
+        "title": "Giro Cattolica",
         "date": "01/01/2010",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
         "icon": null,
         "text": null,
         "position": null,
+        "route": {
+          "km":60,
+          "altimetry": 1000,
+          "difficulty": "media" 
+        },
         "time": "1h.30min",
         "images": [
           "img/lego1.jpg",

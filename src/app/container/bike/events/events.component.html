@@ -1,6 +1,15 @@
 <div>
     <div style="margin-top:100px;" *ngFor="let main of bikeevents">
-        EVENTI
+        {{main.title}}
+
+        <div *ngFor="let event of main.elements">
+            {{event.title}}
+            {{event.date}}
+            <div ng-if="event.route">
+
+                {{event.route.km}}
+            </div>
+        </div>
     </div> 
 
 </div>
