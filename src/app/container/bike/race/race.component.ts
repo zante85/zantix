@@ -4,22 +4,22 @@ import { Bike } from '../bike';
 import { BikeService } from '../bikeservice';
 
 @Component({
-    selector: 'app-team',
-    templateUrl: './team.component.html',
-    styleUrls: ['./team.component.css']
+    selector: 'app-race',
+    templateUrl: './race.component.html',
+    styleUrls: ['./race.component.css']
 })
 
-export class TeamComponent {
-    teams: Bike[];
+export class RaceComponent {
+    races: Bike[];
     constructor(private bikeservice: BikeService) {
 
         this.bikeservice.getBikes().subscribe((bikes: Array<Bike>) => {
             let num = 0;
             if (bikes != null) {
-                this.teams =new Array<Bike>();
+                this.races =new Array<Bike>();
                 for (var _i = 0; _i < bikes.length; _i++) {
-                    if (bikes[_i].type == 1) {
-                        this.teams[num]=bikes[_i];
+                    if (bikes[_i].type == 2) {
+                        this.races[num]=bikes[_i];
                         num++;
                     }
                 }

@@ -13,6 +13,8 @@ import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TeamComponent } from './bike/team/team.component';
 import { BikeService } from './bike/bikeservice';
+import { RaceComponent } from './bike/race/race.component';
+import { EventsComponent } from './bike/events/events.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { BikeService } from './bike/bikeservice';
     HomeComponent,
     ContainerComponent,
     LegoComponent,
-    TeamComponent
+    TeamComponent,
+    RaceComponent,
+    EventsComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +43,9 @@ import { BikeService } from './bike/bikeservice';
     ContactsComponent,
     HomeComponent,
     LegoComponent,
-    TeamComponent
+    TeamComponent,
+    RaceComponent,
+    EventsComponent
   ]
 })
 
