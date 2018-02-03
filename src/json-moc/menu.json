@@ -19,7 +19,7 @@
     "url": "bike",
 		"sub": [{
         "id": "21",
-				"name": "Squadra",
+				"name": "Squadre",
         "url": "/team",
         "icon": null,
         "sub": null

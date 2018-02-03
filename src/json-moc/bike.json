@@ -1,0 +1,94 @@
+[
+  {
+    "id": "10",
+    "type": 1,
+    "title": "Squadre",
+    "description": "Ecco le mie squadre amatoriali di ciclismo in cui sono stato",
+    "backgroundimage": "/",
+    "icon": null,
+    "text": null,
+    "elements": [
+      {
+        "id": "980",
+        "title": "Top Team Bike",
+        "date": "2018-oggi",
+        "description": "",
+        "backgroundimage": "/",
+        "icon": null,
+        "text": null,
+        "position": null,
+        "time": null,
+        "images": [
+          "img/lego1.jpg"        ]
+      },
+      {
+        "id": "970",
+        "title": "Valpolicella Bike Team",
+        "date": "2013-2017",
+        "description": "",
+        "backgroundimage": "/",
+        "icon": null,
+        "text": null,
+        "position": null,
+        "time": null,
+        "images": [
+          "img/lego1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "type": 2,
+    "title": "Mondo Lego",
+    "description": "Qui di seguito alcune mie creazioni Lego",
+    "backgroundimage": "/",
+    "icon": null,
+    "text": null,
+    "elements": [
+      {
+        "id": "970",
+        "title": "GF Eddy Merckx",
+        "date": "01/01/2010",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
+        "backgroundimage": "/",
+        "icon": null,
+        "text": null,
+        "position": 100,
+        "time": "1h.30min",
+        "images": [
+          "img/lego1.jpg",
+          "img/lego2.jpg",
+          "img/lego3.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "type": 3,
+    "title": "Mondo Lego",
+    "description": "Qui di seguito alcune mie creazioni Lego",
+    "backgroundimage": "/",
+    "icon": null,
+    "text": null,
+    "elements": [
+      {
+        "id": "970",
+        "title": "GF Eddy Merckx",
+        "date": "01/01/2010",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
+        "backgroundimage": "/",
+        "icon": null,
+        "text": null,
+        "position": null,
+        "time": "1h.30min",
+        "images": [
+          "img/lego1.jpg",
+          "img/lego2.jpg",
+          "img/lego3.jpg"
+        ]
+      }
+    ]
+  }
+]

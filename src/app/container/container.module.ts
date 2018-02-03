@@ -11,6 +11,8 @@ import { ContainerComponent } from './container.component';
 import { LegoComponent } from './lego/lego.component';
 import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { TeamComponent } from './bike/team/team.component';
+import { BikeService } from './bike/bikeservice';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ContactsComponent,
     HomeComponent,
     ContainerComponent,
-    LegoComponent
+    LegoComponent,
+    TeamComponent
   ],
   imports: [
     CommonModule,
@@ -28,13 +31,15 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   providers: [
-    LegoService
+    LegoService,
+    BikeService
   ],
   exports: [
     GalleryComponent,
     ContactsComponent,
     HomeComponent,
-    LegoComponent
+    LegoComponent,
+    TeamComponent
   ]
 })
 

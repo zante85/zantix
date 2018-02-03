@@ -1,0 +1,10 @@
+<div>
+    <div style="margin-top:100px;" *ngFor="let main of teams">
+        {{main.title}}
+
+        <div *ngFor="let team of main.elements">
+            {{team.title}} - {{team.date}}
+        </div>
+    </div> 
+
+</div>
