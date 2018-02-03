@@ -6,8 +6,10 @@
     "icon": null,
     "text": null,
     "elements": [{
-        "id": "10",
-				"title": "Presepio Lego",
+        "id": "970",
+        "title": "Presepe Lego",
+        "dinizio": "2017",
+        "dfine": "In Progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
         "icon": null,
@@ -17,10 +19,27 @@
           "img/lego2.jpg",
           "img/lego3.jpg" 
         ]
+      },
+      {
+        "id": "980",
+        "title": "Tableau Mariage",
+        "dinizio": "2015",
+        "dfine": "2017",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
+        "backgroundimage": "/",
+        "icon": null,
+        "text": null,
+        "images": [
+          "img/lego3.jpg",
+          "img/lego4.jpg",
+          "img/lego3.jpg" 
+        ]
 			},
 			{
-        "id": "20",
-				"title": "Tableau Mariage",
+        "id": "990",
+        "title": "Tableau Mariage",
+        "dinizio": "2014",
+        "dfine": "2014",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
         "icon": null,

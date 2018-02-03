@@ -5,6 +5,7 @@
 
         <p class="page-description text-center">{{lego.description}}</p>
 
+
         <div style="padding-top: 56px" *ngFor="let argument of lego.elements;" class="row">
             <div class="col-md-7">
                 <a href="#">
@@ -13,8 +14,14 @@
             </div>
             <div class="col-md-5">
                 <h3>{{argument.title}}</h3>
+                <div *ngIf="argument.dinizio!=argument.dfine;else nodfine">
+                    <h4>{{argument.dinizio}} - {{argument.dfine}}</h4>
+                </div>
+                <ng-template #nodfine>
+                    <h4>{{argument.dinizio}}</h4>
+                </ng-template>
                 <p>{{argument.description}}</p>
-                <a class="btn btn-primary" href="#">Ulteriori Foto</a>
+                <a class="btn btn-outline-success my-2 my-sm-0" href="#">Ulteriori Foto</a>
             </div>
         </div>
 
@@ -33,11 +40,20 @@
 
 
             <li class="page-item">
+                <a class="page-link" href="#" aria-label="All">
+                    <span aria-hidden="true">Tutti</span>
+                    <span class="sr-only">Tutti</span>
+                </a>
+            </li>
+
+            <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>
                 </a>
             </li>
+
+
         </ul>
 
     </div>
