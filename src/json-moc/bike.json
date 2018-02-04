@@ -18,9 +18,7 @@
         "text": null,
         "position": null,
         "time": null,
-        "images": [
-          "img/lego1.jpg"
-        ]
+        "images": null
       },
       {
         "id": "970",
@@ -33,9 +31,7 @@
         "position": null,
         "route": null,
         "time": null,
-        "images": [
-          "img/lego1.jpg"
-        ]
+        "images": null
       }
     ]
   },
@@ -54,16 +50,12 @@
         "date": "01/01/2010",
         "description": "",
         "backgroundimage": "/",
-        "icon": null,
+        "icon": "img/merckx.jpg",
         "text": null,
         "position": 100,
         "route": null,
         "time": "3h.30min",
-        "images": [
-          "img/lego1.jpg",
-          "img/lego2.jpg",
-          "img/lego3.jpg"
-        ]
+        "images": null
       }
     ]
   },
@@ -82,7 +74,7 @@
         "date": "01/01/2010",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "/",
-        "icon": null,
+        "icon": "img/cattolica.jpg",
         "text": null,
         "position": null,
         "route": {
@@ -91,11 +83,7 @@
           "difficulty": "media" 
         },
         "time": "1h.30min",
-        "images": [
-          "img/lego1.jpg",
-          "img/lego2.jpg",
-          "img/lego3.jpg"
-        ]
+        "images": null
       }
     ]
   }
