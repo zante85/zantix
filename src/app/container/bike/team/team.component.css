@@ -4,4 +4,9 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 0!important;
+    padding-top: 0!important;
   }
