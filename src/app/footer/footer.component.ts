@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { Constants } from '../config/constants';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,5 @@ import {Component} from '@angular/core';
 })
 
 export class FooterComponent {
-  
+  get copyright() { return Constants.COPYRIGHT; }
 }

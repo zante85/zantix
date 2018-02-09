@@ -3,7 +3,12 @@
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  background-color:#f7f7f7;
+  background-color: #5985b6;
+  
+}
+
+.text-principal {
+  color: #fcfdfd;
 }
 
 .footer > .container {

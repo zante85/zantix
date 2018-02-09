@@ -12,6 +12,7 @@ import { ContainerModule } from './container/container.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './error404/error-404.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { Constants } from './config/constants';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   ],
   providers: [
     { provide: APP_CONFIG, useValue: AppConfig },
-    MenuService
+    MenuService,
+    Constants
   ],
   bootstrap: [AppComponent]
 })
