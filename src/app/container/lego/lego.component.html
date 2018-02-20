@@ -21,7 +21,10 @@
                     <h4>{{argument.dinizio}}</h4>
                 </ng-template>
                 <p>{{argument.description}}</p>
-                <a class="btn btn-primary my-2 my-sm-0" href="#">Ulteriori Foto</a>
+
+                <button (click)="openModal(argument)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Ulteriori Foto
+                </button>
             </div>
         </div>
 
@@ -56,5 +59,29 @@
 
         </ul>
 
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{popupTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                 <div class="row">
+                    <div *ngFor="let img of currentImages" class="col-6 col-md-4">
+                            <img class="img-fluid rounded mb-3 mb-md-0" src="{{img}}" alt="{{img}}">
+                    </div>
+                    
+                  </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+            </div>
+        </div>
     </div>
 </div>

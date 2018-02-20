@@ -2,6 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { LegoService } from './legoservice';
 import { Lego } from './lego';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GenericElement } from './genericelement';
 
 @Component({
   selector: 'app-lego',
@@ -11,6 +12,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export class LegoComponent {
   legos: Lego[];
+  currentImages: String[];
+  popupTitle: String;
   paginations: Number[];
   constructor(private legoservice: LegoService) {
 
@@ -28,6 +31,12 @@ export class LegoComponent {
       }
     });
 
+  }
+
+  openModal(element: GenericElement){
+    console.log(element.images);
+    this.currentImages = element.images;
+    this.popupTitle = element.title;
   }
 
   changeContainer(name: string) {
