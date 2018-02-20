@@ -37,13 +37,6 @@
         "url": "/events",
         "icon": null,
         "sub": null
-			},
-			{
-        "id": "24",
-				"name": "Strava",
-        "url": "/strava",
-        "icon": null,
-        "sub": null
 			}
 		]
 	},

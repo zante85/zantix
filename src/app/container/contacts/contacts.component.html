@@ -1,30 +1,64 @@
 <div *ngIf="!name; else forminfo" class="contactcontainer">
-  <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
-    <div class="form-container">
-      <div>
-        <h3>Contatti</h3>
-        <h4>Contattami</h4>
-        <fieldset class="form-group row">
-          <label>Nome
-            <input type="text" formControlName="name">
-            <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
-          </label>
-        </fieldset>
 
-        <fieldset class="form-group row">
-          <label>Descrizione
-            <textarea formControlName="description"></textarea>
-            <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
-          </label>
-        </fieldset>
+  <div class="row">
+    <div class="col">
+      <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <div class="form-container">
+          <div>
+            <h3>Contatti</h3>
+            <h4>Contattami</h4>
+            <fieldset class="form-group row">
+              <label>Nome
+                <input type="text" formControlName="name">
+                <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
+              </label>
+            </fieldset>
 
-        <!--<label for="validate">Minimum of 3 Characters</label>
+            <fieldset class="form-group row">
+              <label>Descrizione
+                <textarea formControlName="description"></textarea>
+                <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
+              </label>
+            </fieldset>
+
+            <!--<label for="validate">Minimum of 3 Characters</label>
+            <input type="checkbox" name="validate" formControlName="validate" value="1"> On-->
+
+            <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Submit Form" [disabled]="!rForm.valid">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col">
+      <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <div class="form-container">
+          <div>
+            <h3>Contatti</h3>
+            <h4>Contattami</h4>
+            <fieldset class="form-group row">
+              <label>Nome
+                <input type="text" formControlName="name">
+                <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
+              </label>
+            </fieldset>
+
+            <fieldset class="form-group row">
+              <label>Descrizione
+                <textarea formControlName="description"></textarea>
+                <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
+              </label>
+            </fieldset>
+
+            <!--<label for="validate">Minimum of 3 Characters</label>
         <input type="checkbox" name="validate" formControlName="validate" value="1"> On-->
 
-        <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Submit Form" [disabled]="!rForm.valid">
-      </div>
+            <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Submit Form" [disabled]="!rForm.valid">
+          </div>
+        </div>
+      </form>
     </div>
-  </form>
+  </div>
 </div>
 
 <ng-template #forminfo>
