@@ -14,12 +14,14 @@ export class ContactsComponent {
   post:any;                     // A property for our submitted form
   description:string = '';
   name:string = '';
+  email:string = '';
   titleAlert:string = 'Campo obbligatorio';
 
   constructor(private fb: FormBuilder) { 
 
     this.rForm = fb.group({
       'name' : [null, Validators.compose([Validators.required, Validators.minLength(3)])],
+      'email' : [null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
       'description' : [null, Validators.compose([Validators.required, Validators.minLength(30), Validators.maxLength(500)])],
       'validate' : ''
     });

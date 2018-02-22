@@ -1,72 +1,100 @@
-<div *ngIf="!name; else forminfo" class="contactcontainer">
+<div class="contactcontainer">
+  <div *ngIf="!name; else forminfo">
 
-  <div class="row">
-    <div class="col">
-      <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
-        <div class="form-container">
-          <div>
-            <h3>Contatti</h3>
-            <h4>Contattami</h4>
-            <fieldset class="form-group row">
-              <label>Nome
-                <input type="text" formControlName="name">
-                <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
-              </label>
-            </fieldset>
-
-            <fieldset class="form-group row">
-              <label>Descrizione
-                <textarea formControlName="description"></textarea>
-                <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
-              </label>
-            </fieldset>
-
-            <!--<label for="validate">Minimum of 3 Characters</label>
-            <input type="checkbox" name="validate" formControlName="validate" value="1"> On-->
-
-            <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Submit Form" [disabled]="!rForm.valid">
+    <div class="row">
+      <div class="col">
+        <div id="contact">
+          <div class="form-container" style="margin-top:auto;margin-bottom:auto;">
+            <div class="contactcontainersx">
+              <div class="labelContact">Nome Cognome</div>
+              <div class="labelContact">email@email.it</div>
+              <div class="labelContact">email@email.it</div>
+              <div class="linkContainer">
+                <a href="#" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    <div class="linkContact">https://www.facebook.com/</div>
+                  </span>
+                </a>
+                <br/>
+                <a href="#" title="Strava">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
+                    <div class="linkContact">https://www.strava.com/login</div>
+                  </span>
+                </a>
+                <br/>
+                <a href="#" title="Linkedin">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    <div class="linkContact">https://it.linkedin.com/</div>
+                  </span>
+                </a>
+                <br/>
+                <a href="#" title="Brickset">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+                    <div class="linkContact">https://brickset.com/</div>
+                  </span>
+                </a>
+              </div>
+              <div class="imgContainer">
+                <img src="img/contact.png" alt="contact">
+              </div>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
 
-    <div class="col">
-      <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
-        <div class="form-container">
-          <div>
-            <h3>Contatti</h3>
-            <h4>Contattami</h4>
-            <fieldset class="form-group row">
-              <label>Nome
-                <input type="text" formControlName="name">
-                <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
-              </label>
-            </fieldset>
+      <div class="col">
+        <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+          <div class="form-container">
+            <div>
+              <h2>Contattami</h2>
 
-            <fieldset class="form-group row">
-              <label>Descrizione
-                <textarea formControlName="description"></textarea>
-                <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
-              </label>
-            </fieldset>
+              <fieldset class="form-group row">
+                <label>Nome
+                  <input type="text" formControlName="name">
+                  <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">Devi inserire almeno 3 caratteri</div>
+                </label>
+              </fieldset>
 
-            <!--<label for="validate">Minimum of 3 Characters</label>
+              <fieldset class="form-group row">
+                <label>Email
+                  <input type="text" formControlName="email">
+                  <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Devi inserire una mail valida</div>
+                </label>
+              </fieldset>
+
+              <fieldset class="form-group row">
+                <label>Messaggio
+                  <textarea formControlName="description"></textarea>
+                  <div class="alert" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 30 and 500 characters.</div>
+                </label>
+              </fieldset>
+
+              <!--<label for="validate">Minimum of 3 Characters</label>
         <input type="checkbox" name="validate" formControlName="validate" value="1"> On-->
 
-            <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Submit Form" [disabled]="!rForm.valid">
+              <input type="submit" class="btn btn-primary my-2 my-sm-0" value="Invia" [disabled]="!rForm.valid">
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
+
+  <ng-template #forminfo>
+    <div class="form-container">
+      <div class="row columns">
+        <h1>{{ name }}</h1>
+
+        <p>{{ description }}</p>
+      </div>
+    </div>
+  </ng-template>
 </div>
-
-<ng-template #forminfo>
-  <div class="form-container">
-    <div class="row columns">
-      <h1>{{ name }}</h1>
-
-      <p>{{ description }}</p>
-    </div>
-  </div>
-</ng-template>

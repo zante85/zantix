@@ -17,10 +17,12 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: #c6f2e6;
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #c6f2e6;
 }
 
 /* Custom page CSS

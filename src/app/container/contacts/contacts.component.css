@@ -1,8 +1,40 @@
 .contactcontainer {
-  max-width: 1024px;
-  width: 100%;
+  max-width: 1024ng px;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
   position: relative;
+  background: #F9F9F9;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.labelContact{
+  font-size: 1rem;
+}
+
+.imgContainer{
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactcontainersx{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.linkContainer{
+  margin-top: 20px;
+}
+
+.linkContact{
+  margin-left: 50px;
+  color: black;
+  font-size: 1rem;
 }
 
 #contact input[type="text"],
@@ -17,8 +49,8 @@
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin: 30px 0;
+  
 }
 
 #contact h3 {
@@ -67,7 +99,7 @@ fieldset {
 }
 
 #contact textarea {
-  height: 100px;
+  height: 200px;
   max-width: 100%;
   resize: none;
 }
