@@ -1,20 +1,27 @@
 <div style="background-color: #c6f2e6;">
-    <div style="margin-top:100px;" *ngFor="let main of teams">
-        
+  <div style="margin-top:100px;" *ngFor="let main of teams">
+    <div class="container gallery-container">
+      <ngb-accordion [closeOthers]="true" activeIds="ngb-panel-0">
+        <ngb-panel *ngFor="let team of main.elements;" title="{{team.title}}">
+          <ng-template ngbPanelContent>
+            
+            <div class="tz-gallery">
 
-        <div *ngFor="let team of main.elements">
-            
-             <img class="py-5 bg-image-full" src="{{team.icon}}"/>
-            
-              <!-- Content section -->
-              <section class="py-5">
-                <div class="container">
-                  <h1>{{team.title}}</h1>
-                  <p class="lead">{{team.date}}</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+              <div class="row">
+                <div class="col-md-8">
+                  <img style="width:100%" src="{{team.icon}}" alt="Image">
                 </div>
-              </section>
-        </div>
-    </div> 
+                <div class="col-md-4">
+                  {{team.date}}
+                  <br/>
+                  {{team.description}}
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
 
+    </div>
+  </div>
 </div>
