@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Constants } from '../../config/constants';
 
 @Component({
   selector: 'app-contacts',
@@ -9,6 +10,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 
 export class ContactsComponent {
+  
+  get contact() { return Constants.CONTACT};
   
   rForm: FormGroup;
   post:any;                     // A property for our submitted form

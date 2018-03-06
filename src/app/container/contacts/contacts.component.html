@@ -6,39 +6,38 @@
         <div id="contact">
           <div class="form-container" style="margin-top:auto;margin-bottom:auto;">
             <div class="contactcontainersx">
-              <div class="labelContact">Nome Cognome</div>
-              <div class="labelContact">email@email.it</div>
-              <div class="labelContact">email@email.it</div>
+              <div class="labelContact">{{contact.nome}} {{contact.cognome}}</div>
+              <div class="labelContact">{{contact.email}}</div>
               <div class="linkContainer">
-                <a href="#" title="Facebook">
+                <a href="{{contact.facebook}}" target="_blank" title="Facebook">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                    <div class="linkContact">https://www.facebook.com/</div>
+                    <div class="linkContact">{{contact.facebook}}</div>
                   </span>
                 </a>
                 <br/>
-                <a href="#" title="Strava">
+                <a href="{{contact.strava}}" target="_blank" title="Strava">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-bicycle fa-stack-1x fa-inverse"></i>
-                    <div class="linkContact">https://www.strava.com/login</div>
+                    <div class="linkContact">{{contact.strava}}</div>
                   </span>
                 </a>
                 <br/>
-                <a href="#" title="Linkedin">
+                <a href="{{contact.linkedin}}" target="_blank" title="Linkedin">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                    <div class="linkContact">https://it.linkedin.com/</div>
+                    <div class="linkContact">{{contact.linkedin}}</div>
                   </span>
                 </a>
                 <br/>
-                <a href="#" title="Brickset">
+                <a href="{{contact.brickset}}" target="_blank" title="Brickset">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-                    <div class="linkContact">https://brickset.com/</div>
+                    <div class="linkContact">{{contact.brickset}}</div>
                   </span>
                 </a>
               </div>

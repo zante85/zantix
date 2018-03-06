@@ -35,6 +35,9 @@
   margin-left: 50px;
   color: black;
   font-size: 1rem;
+  text-overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 #contact input[type="text"],

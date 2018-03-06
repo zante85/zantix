@@ -9,4 +9,5 @@ import { Constants } from '../config/constants';
 
 export class FooterComponent {
   get copyright() { return Constants.COPYRIGHT; }
+  get contact() { return Constants.CONTACT};
 }
