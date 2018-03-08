@@ -6,7 +6,7 @@
         <p class="page-description text-center">{{lego.description}}</p>
 
 
-        <div style="padding-top: 56px" *ngFor="let argument of lego.elements;" class="row">
+        <div style="padding-top: 56px" *ngFor="let argument of elementspage[currentPage-1];" class="row">
             <div class="col-md-7">
                 <a href="#">
                     <img class="img-fluid rounded mb-3 mb-md-0" src="{{argument.images[0]}}" alt="">

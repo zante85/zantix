@@ -12,6 +12,7 @@ import { GenericElement } from './genericelement';
 
 export class LegoComponent {
   legos: Lego[];
+  elementspage: any[][];
   currentImages: String[];
   popupTitle: String;
   paginations: Number[];
@@ -23,11 +24,19 @@ export class LegoComponent {
       this.legos = legos;
       this.paginations = new Array<Number>();
       let z = 1;
+      let x = 0;
+      this.elementspage = []; 
       // Paginazione 5 elementi per pagina
       for (var _i = 0; _i < this.legos[0].elements.length; _i++) {
-        if (_i % 5 == 0) {
+        if(this.elementspage[z - 1]==undefined){
+          this.elementspage[z - 1] = [];
+        }
+        this.elementspage[z - 1][x] = this.legos[0].elements[_i];
+        x++;
+        if (_i!=0 && _i % 5 == 0) {
           this.paginations[z - 1] = z;
           z++;
+          x = 0;
         }
       }
     });
