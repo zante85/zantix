@@ -57,6 +57,10 @@
     background-color: transparent !important;
 }
 
+.page-link{
+    cursor: pointer;
+}
+
 
 @media(max-width: 768px) {
     body {
