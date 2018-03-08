@@ -15,8 +15,9 @@ export class LegoComponent {
   currentImages: String[];
   popupTitle: String;
   paginations: Number[];
+  currentPage: number;
   constructor(private legoservice: LegoService) {
-
+    this.currentPage = 1;
     this.legoservice.getLegos().subscribe((legos: Array<Lego>) => {
       console.log(legos);
       this.legos = legos;
@@ -25,7 +26,7 @@ export class LegoComponent {
       // Paginazione 5 elementi per pagina
       for (var _i = 0; _i < this.legos[0].elements.length; _i++) {
         if (_i % 5 == 0) {
-          this.paginations[_i] = z;
+          this.paginations[z - 1] = z;
           z++;
         }
       }
@@ -33,7 +34,24 @@ export class LegoComponent {
 
   }
 
-  openModal(element: GenericElement){
+  goToPage(page: number) {
+    this.currentPage = page;
+  }
+
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage -= 1;
+    }
+
+  }
+
+  nextPage() {
+    if (this.currentPage < this.paginations.length) {
+      this.currentPage += 1;
+    }
+  }
+
+  openModal(element: GenericElement) {
     console.log(element.images);
     this.currentImages = element.images;
     this.popupTitle = element.title;

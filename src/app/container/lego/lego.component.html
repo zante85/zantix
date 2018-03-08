@@ -34,7 +34,7 @@
 
         <ul class="pagination justify-content-center">
             <li class="page-item">
-                <div class="page-link" ng-click="alert('previous')"  aria-label="Previous">
+                <div class="page-link" (click)="previousPage()"  aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                     <span class="sr-only">Previous</span>
                 </div>
@@ -42,11 +42,11 @@
 
 
             <li *ngFor="let number of paginations" class="page-item">
-                <div class="page-link" ng-click="alert('number')" href="#">{{number}}</div>
+                <div class="page-link" (click)="goToPage(number)" href="#">{{number}}</div>
             </li>
 
             <li class="page-item">
-                <div class="page-link"  ng-click="alert('next')" aria-label="Next">
+                <div class="page-link"  (click)="nextPage()" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>
                 </div>
