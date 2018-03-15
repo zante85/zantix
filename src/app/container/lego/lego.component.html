@@ -41,8 +41,9 @@
             </li>
 
 
-            <li *ngFor="let number of paginations" class="page-item">
-                <div class="page-link" (click)="goToPage(number)" href="#">{{number}}</div>
+            <li *ngFor="let number of paginations" class="page-item" [ngClass]="{'active':currentPage==number}">
+                <div class="page-link" 
+                (click)="goToPage(number)" href="#">{{number}}</div>
             </li>
 
             <li class="page-item">

@@ -27,18 +27,21 @@ export class LegoComponent {
       let x = 0;
       this.elementspage = []; 
       // Paginazione 5 elementi per pagina
+      console.log(this.legos[0].elements.length);
       for (var _i = 0; _i < this.legos[0].elements.length; _i++) {
         if(this.elementspage[z - 1]==undefined){
           this.elementspage[z - 1] = [];
         }
         this.elementspage[z - 1][x] = this.legos[0].elements[_i];
         x++;
-        if (_i!=0 && _i % 5 == 0) {
+        if ( (_i+1) % 5 == 0 || _i==this.legos[0].elements.length-1) {
+          console.log(_i);
           this.paginations[z - 1] = z;
           z++;
           x = 0;
         }
       }
+
     });
 
   }
