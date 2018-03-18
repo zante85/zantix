@@ -3,7 +3,7 @@
   width: 100%;
 }
 
-#events-grid.pagination-box{
+.pagination-box[_ngcontent-c8]{
   padding-top: 5px;
 }
 

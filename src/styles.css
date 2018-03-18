@@ -25,6 +25,18 @@ body {
   background-color: #c6f2e6;
 }
 
+.pagination-box[_ngcontent-c8]{
+  padding-top: 5px;
+}
+
+.input-group-prepend[_ngcontent-c8]{
+  padding-top: 5px;
+}
+
+.input-group-append[_ngcontent-c8]{
+  padding-top: 5px;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
