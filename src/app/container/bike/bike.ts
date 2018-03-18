@@ -10,5 +10,5 @@ export class Bike {
     backgroundimage: string;
     icon: string;
     text: string;
-    events: Eventbike[];
+    elements: Eventbike[];
 }

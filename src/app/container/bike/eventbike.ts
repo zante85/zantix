@@ -1,4 +1,3 @@
-import { BikeRoute } from "./bikeroute";
 
 export class Eventbike {
     id: string;
@@ -9,7 +8,9 @@ export class Eventbike {
     icon: string;
     text: string;
     position: number;
-    route: BikeRoute;
+    km: number;
+    altimetry: number;
+    difficulty: string;
     time: string;
     images: string[];
 }

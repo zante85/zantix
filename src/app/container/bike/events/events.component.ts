@@ -3,6 +3,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Bike } from '../bike';
 import { BikeService } from '../bikeservice';
 import { DataTable, DataTableTranslations, DataTableResource } from 'angular5-data-table';
+import { Eventbike } from '../eventbike';
 
 @Component({
     selector: 'app-events',
@@ -14,6 +15,8 @@ import { DataTable, DataTableTranslations, DataTableResource } from 'angular5-da
 
 export class EventsComponent {
     bikeevents: Bike[];
+    listEvents: Eventbike[];
+    bikeResource = new DataTableResource(this.listEvents);
     eventsCount = 0;
 
     translations = <DataTableTranslations>{
@@ -34,13 +37,15 @@ export class EventsComponent {
                 for (var _i = 0; _i < bikes.length; _i++) {
                     if (bikes[_i].type == 3) {
                         this.bikeevents[num]=bikes[_i];
+                        console.log(bikes[_i]);
+                        this.listEvents=bikes[_i].elements;
+                        this.bikeResource = new DataTableResource(this.listEvents);
                         num++;
                         this.eventsCount++;
                     }
                 }
             }
         });
-
     }
 
     /*cellColor(car) {
@@ -51,7 +56,9 @@ export class EventsComponent {
         console.log(name);
     }
 
-    /*reloadEvents(params) {
-        this.filmResource.query(params).then(films => this.films = films);
-    }*/
+    reloadEvents(params) {
+        console.log(this.listEvents);
+        this.bikeResource.query(params).then(listEvents => this.listEvents = listEvents);
+       // this.filmResource.query(params).then(films => this.films = films);
+    }
 }

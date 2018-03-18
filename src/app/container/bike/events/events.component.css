@@ -2,6 +2,14 @@
 
   width: 100%;
 }
+
+#events-grid.pagination-box{
+  padding-top: 5px;
+}
+
+#events-grid.input-group-prepend{
+  padding-top: 5px;
+}
   
   .portfolio-item {
     margin-bottom: 30px;
