@@ -1,51 +1,42 @@
-<div style="margin-top:100px;margin-bottom:60px;background-color: #c6f2e6;" class="container" *ngFor="let main of races">
+<div style="margin-top:60px;margin-bottom:60px;" class="container" *ngFor="let main of races">
+
+        <h1 class="my-4" style="text-align: center">
+            {{main.title}}
+        </h1>
     
-    <h1 class="my-4">{{main.title}}
-        <br/>
-        <small>{{main.description}}</small>
-    </h1>
-
-    <div class="row">
-        <div *ngFor="let race of main.elements" class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#">
-                    <img class="card-img-top" src="{{race.icon}}" alt="">
-                </a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">{{race.title}}</a>
-                    </h4>
-                    <p class="card-text">{{race.description}}</p>
-                </div>
-            </div>
+        <h4 class="my-4" style="text-align: center">
+            {{main.description}}
+        </h4>
+    
+        <div style="background: white;padding: 30px;">
+            <data-table id="races-grid" headerTitle="Gare" [items]="listRaces" [itemCount]="racesCount" (reload)="reloadRaces($event)"
+                [limit]="10" [sortBy]="'date'" [sortAsc]="false" [substituteRows]="false" [expandableRows]="true" [translations]="translations"
+                [indexColumnHeader]="'#'">
+                <ng-template #dataTableExpand let-item="item">
+                    <div [textContent]="item.description" style="padding: 5px; color: gray"></div>
+                </ng-template>
+                <data-table-column [property]="'title'" [header]="'Nome'" [sortable]="true">
+                </data-table-column>
+                <data-table-column [property]="'date'" [header]="'Data Gara'" [sortable]="true">
+                </data-table-column>
+                <data-table-column [property]="'km'" [header]="'Km'" [sortable]="true">
+                </data-table-column>
+                <data-table-column [property]="'time'" [header]="'Tempo Stimato'" [sortable]="true">
+                </data-table-column>
+                <data-table-column [property]="'altimetry'" [header]="'Altimetria'" [sortable]="true">
+                </data-table-column>
+                <data-table-column [property]="'difficulty'" [header]="'Difficoltà'" [sortable]="true">
+                </data-table-column>
+            </data-table>
+            <!--<div style="margin-top: 10px">
+            <b>Selected:</b>
+            <span *ngIf="eventsTable.selectedRow == null">
+                <i>No item selected</i>
+            </span>
+            <span [textContent]="eventsTable.selectedRow && eventsTable.selectedRow.item.title"></span>
+        </div>-->
+    
+    
         </div>
-
+    
     </div>
-    <!-- /.row -->
-
-    <!-- Pagination -->
-    <ul class="pagination justify-content-center">
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-            </a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-            </a>
-        </li>
-    </ul>
-
-</div>

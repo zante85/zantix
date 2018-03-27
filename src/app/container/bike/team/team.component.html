@@ -1,6 +1,17 @@
 <div style="background-color: #c6f2e6;">
-  <div style="margin-top:100px;" *ngFor="let main of teams">
-    <div class="container gallery-container">
+  
+    
+
+  <div style="margin-top:60px;" *ngFor="let main of teams">
+      <h1 class="my-4" style="text-align: center">
+          {{main.title}}
+      </h1>
+  
+      <h4 class="my-4" style="text-align: center">
+          {{main.description}}
+      </h4>
+
+    <div class="container gallery-container" style="margin-bottom:60px;">
       <ngb-accordion [closeOthers]="true" activeIds="ngb-panel-0">
         <ngb-panel *ngFor="let team of main.elements;" title="{{team.title}}">
           <ng-template ngbPanelContent>

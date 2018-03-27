@@ -2,7 +2,7 @@
 export class Eventbike {
     id: string;
     title: string;
-    date: string;
+    date: Date;
     description: string;
     backgroundimage: string;
     icon: string;
