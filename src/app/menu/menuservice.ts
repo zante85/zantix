@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
-import {Observable} from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import 'rxjs/Rx';
+import { map, catchError } from 'rxjs/operators';
 import { Menu } from './menu';
 
 
@@ -21,11 +22,11 @@ export class MenuService{
   } 
 
   getMenu(): Observable<Menu[]> {
-    return this.http.get("json-moc/menu.json")
-      .map(response => {
+    return this.http.get("json-moc/menu.json").pipe(
+      map(response => {
         return response.json();
-      })
-      .catch(error => this.handleError(error));
+      }),
+      catchError(error => this.handleError(error)));
   }
   
 }

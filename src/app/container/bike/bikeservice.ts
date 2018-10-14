@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
-import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
+import { map, catchError } from 'rxjs/operators';
 import { Bike } from './bike';
+import { Observable } from 'rxjs';
 
 
 
@@ -21,11 +22,11 @@ export class BikeService{
   } 
 
   getBikes(): Observable<Bike[]> {
-    return this.http.get("json-moc/bike.json")
-      .map(response => {
+    return this.http.get("json-moc/bike.json").pipe(
+      map(response => {
         return response.json();
-      })
-      .catch(error => this.handleError(error));
+      }),
+      catchError(error => this.handleError(error)));
   }
   
 }

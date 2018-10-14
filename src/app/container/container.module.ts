@@ -15,7 +15,7 @@ import { TeamComponent } from './bike/team/team.component';
 import { BikeService } from './bike/bikeservice';
 import { RaceComponent } from './bike/race/race.component';
 import { EventsComponent } from './bike/events/events.component';
-import { DataTableModule } from 'angular5-data-table';
+import { DataTableModule } from 'angular-6-datatable';
 
 @NgModule({
   declarations: [

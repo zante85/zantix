@@ -2,7 +2,7 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Bike } from '../bike';
 import { BikeService } from '../bikeservice';
-import { DataTable, DataTableTranslations, DataTableResource } from 'angular5-data-table';
+import { DataTable } from 'angular-6-datatable';
 import { Eventbike } from '../eventbike';
 
 @Component({
@@ -16,16 +16,16 @@ import { Eventbike } from '../eventbike';
 export class EventsComponent {
     bikeevents: Bike[];
     listEvents: Eventbike[];
-    bikeResource = new DataTableResource(this.listEvents);
+    //bikeResource = new DataTableResource(this.listEvents);
     eventsCount = 0;
 
-    translations = <DataTableTranslations>{
+    /*translations = <DataTableTranslations>{
         indexColumn: 'Index column',
         expandColumn: 'Expand column',
         selectColumn: 'Select column',
         paginationLimit: 'Max results',
         paginationRange: 'Result range'
-      };
+      };*/
     @ViewChild(DataTable) eventsTable: DataTable;
 
     constructor(private bikeservice: BikeService) {
@@ -39,7 +39,7 @@ export class EventsComponent {
                         this.bikeevents[num]=bikes[_i];
                         console.log(bikes[_i]);
                         this.listEvents=bikes[_i].elements;
-                        this.bikeResource = new DataTableResource(this.listEvents);
+                        //this.bikeResource = new DataTableResource(this.listEvents);
                         num++;
                         this.eventsCount++;
                     }
@@ -58,7 +58,7 @@ export class EventsComponent {
 
     reloadEvents(params) {
         console.log(this.listEvents);
-        this.bikeResource.query(params).then(listEvents => this.listEvents = listEvents);
-       // this.filmResource.query(params).then(films => this.films = films);
+        //this.bikeResource.query(params).then(listEvents => this.listEvents = listEvents);
+       
     }
 }

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
-import {Observable} from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import 'rxjs/Rx';
+import { map, catchError } from 'rxjs/operators';
 import { Lego } from './lego';
 
 
@@ -21,11 +22,11 @@ export class LegoService{
   } 
 
   getLegos(): Observable<Lego[]> {
-    return this.http.get("json-moc/lego.json")
-      .map(response => {
+    return this.http.get("json-moc/lego.json").pipe(
+      map(response => {
         return response.json();
-      })
-      .catch(error => this.handleError(error));
+      }),
+      catchError(error => this.handleError(error)));
   }
   
 }
