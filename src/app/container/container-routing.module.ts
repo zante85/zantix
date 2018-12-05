@@ -7,8 +7,6 @@ import {ContainerComponent} from './container.component';
 import { HomeComponent } from './home/home.component';
 import { LegoComponent } from './lego/lego.component';
 import { TeamComponent } from './bike/team/team.component';
-import { RaceComponent } from './bike/race/race.component';
-import { EventsComponent } from './bike/events/events.component';
 
 const containerRoutes: Routes = [
   {
@@ -19,9 +17,9 @@ const containerRoutes: Routes = [
       {path: 'contacts', component: ContactsComponent},
       {path: 'lego', component: LegoComponent},
       {path: 'bike', component: GalleryComponent},
-      {path: 'team', component: TeamComponent},
-      {path: 'race', component: RaceComponent},
-      {path: 'events', component: EventsComponent}
+      {path: 'team', component: TeamComponent}
+      //{path: 'race', component: RaceComponent},
+      //{path: 'events', component: EventsComponent}
     ]
   }
 ];

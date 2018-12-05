@@ -13,9 +13,6 @@ import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TeamComponent } from './bike/team/team.component';
 import { BikeService } from './bike/bikeservice';
-import { RaceComponent } from './bike/race/race.component';
-import { EventsComponent } from './bike/events/events.component';
-import { DataTableModule } from 'angular-6-datatable';
 
 @NgModule({
   declarations: [
@@ -24,16 +21,13 @@ import { DataTableModule } from 'angular-6-datatable';
     HomeComponent,
     ContainerComponent,
     LegoComponent,
-    TeamComponent,
-    RaceComponent,
-    EventsComponent
+    TeamComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     ContainerRoutingModule,
-    DataTableModule,
     NgbModule
   ],
   providers: [
@@ -45,9 +39,7 @@ import { DataTableModule } from 'angular-6-datatable';
     ContactsComponent,
     HomeComponent,
     LegoComponent,
-    TeamComponent,
-    RaceComponent,
-    EventsComponent
+    TeamComponent
   ]
 })
 

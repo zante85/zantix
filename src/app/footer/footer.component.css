@@ -1,21 +1,22 @@
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  background-color: #5985b6;
-  
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.text-principal {
-  color: #fcfdfd;
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1D809F;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container .text-muted {
-  margin: 5px 0;
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none;
 }
