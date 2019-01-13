@@ -1,28 +1,21 @@
-<a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
+<a class="menu-toggle rounded" (click)="attivamenu=!attivamenu" href="#">
+    <i class="fa" [ngClass]="{'fa-bars': !attivamenu, 'fa-times': attivamenu}"></i>
+</a>
+<nav id="sidebar-wrapper" [ngClass]="{active : attivamenu}">
     <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">Zantix</a>
+        </li>
+        <div *ngFor="let menu of menus">
+            <li *ngIf="!menu.sub;else other_content" class="sidebar-brand">
+                <a class="js-scroll-trigger" href="{{menu.url}}">
+                    <img class="imgMenu" src="{{menu.icon}}" />
+                    {{menu.name}}
+                </a>
+            </li>
+        </div>
     </ul>
-  </nav>
+</nav>
 <!--<nav class="navbar navbar-default bg-faded rounded navbar-toggleable-md">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar"
         aria-expanded="false" aria-label="Toggle navigation">

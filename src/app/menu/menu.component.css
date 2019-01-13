@@ -1,3 +1,10 @@
+.imgMenu {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
