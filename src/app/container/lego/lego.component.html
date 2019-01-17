@@ -1,4 +1,26 @@
-<div *ngFor="let lego of legos" style="background-color: #c6f2e6;">
+<div *ngFor="let lego of legos" class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">{{lego.title}}</h3>
+          <h2 class="mb-5">{{lego.description}}</h2>
+        </div>
+        <div class="row">
+
+                <div *ngFor="let argument of elementspage[currentPage-1];" class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          
+            <span class="service-icon rounded-circle mx-auto mb-3">
+                <img src="{{argument.icon}}" />
+            </span>
+            <h4>
+              <strong>{{argument.title}}</strong>
+            </h4>
+            <p class="text-faded mb-0">{{argument.dinizio}} - {{argument.dfine}}</p>
+          </div>
+        </div>
+      </div>
+
+
+
+<!--<div *ngFor="let lego of legos" style="background-color: #c6f2e6;">
     <div class="lego container gallery-container">
 
         <h1>{{lego.title}}</h1>
@@ -81,4 +103,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->

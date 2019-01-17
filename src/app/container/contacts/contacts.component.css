@@ -12,6 +12,7 @@
 
 .labelContact{
   font-size: 1rem;
+  color: black;
 }
 
 .imgContainer{
@@ -51,6 +52,7 @@
 
 #contact {
   background: #F9F9F9;
+  color: black;
   padding: 25px;
   margin: 30px 0;
   

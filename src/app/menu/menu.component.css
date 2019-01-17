@@ -26,6 +26,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  color: #fff; 
 }
 
 .sidebar-nav li.sidebar-nav-item a {
