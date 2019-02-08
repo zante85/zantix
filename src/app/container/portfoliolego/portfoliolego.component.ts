@@ -3,6 +3,7 @@ import { Lego } from '../lego/lego';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GenericElement } from '../lego/genericelement';
 import { PortfolioLegoService } from './portofoliolegoservice';
+import { GalleryComponent } from '../gallery/gallery.component';
 
 @Component({
   selector: 'app-portfolio',

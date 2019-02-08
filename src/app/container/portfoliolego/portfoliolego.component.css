@@ -1,4 +1,6 @@
-
+ a{
+   cursor: pointer;
+ }
 
  .portfolio-item {
     display: block;
