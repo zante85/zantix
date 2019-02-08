@@ -13,13 +13,11 @@
         "dinizio": "2019",
         "dfine": "in progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
-        "backgroundimage": "/",
+        "backgroundimage": "img/maniero/maniero.jpg",
         "icon": "img/lego-icon-4.png",
         "text": null,
         "images": [
-          "img/lego3.jpg",
-          "img/lego4.jpg",
-          "img/lego1.jpg"
+          "img/maniero/maniero.jpg"
         ]
       },
       {
@@ -28,13 +26,16 @@
         "dinizio": "2017",
         "dfine": "In Progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
-        "backgroundimage": "/",
+        "backgroundimage": "img/presepe/wallpaper-lego-presepe-nativity.jpg",
         "icon": "img/lego-icon-1.png",
         "text": null,
         "images": [
-          "img/lego1.jpg",
-          "img/lego2.jpg",
-          "img/lego3.jpg"
+          "img/presepe/lego-presepe-nativity2.JPG",
+          "img/presepe/lego-presepe-nativity3.JPG",
+          "img/presepe/lego-presepe-nativity4.JPG",
+          "img/presepe/lego-presepe-nativity5.JPG",
+          "img/presepe/lego-presepe-nativity6.JPG",
+          "img/presepe/lego-presepe-nativity7.JPG"
         ]
       },
       {
@@ -43,13 +44,11 @@
         "dinizio": "2015",
         "dfine": "2017",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
-        "backgroundimage": "/",
+        "backgroundimage": "img/plastico/wallpaper-lego-plastico-castle-pirates.jpg",
         "icon": "img/lego-icon-2.png",
         "text": null,
         "images": [
-          "img/lego3.jpg",
-          "img/lego4.jpg",
-          "img/lego3.jpg"
+          "img/plastico/lego-plastico-catle-pirates1.JPG"
         ]
       },
       {
@@ -58,13 +57,11 @@
         "dinizio": "2014",
         "dfine": "2014",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
-        "backgroundimage": "/",
+        "backgroundimage": "img/tableau/wallpaper-lego-tableau-mariage.jpg",
         "icon": "img/lego-icon-3.png",
         "text": null,
         "images": [
-          "img/lego3.jpg",
-          "img/lego4.jpg",
-          "img/lego1.jpg"
+          "img/tableau/tableau-mariage-1.jpg"
         ]
       }
     ]

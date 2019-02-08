@@ -13,6 +13,8 @@ import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { TeamComponent } from './bike/team/team.component';
 import { BikeService } from './bike/bikeservice';
+import { PortfolioLegoService } from './portfoliolego/portofoliolegoservice';
+import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { BikeService } from './bike/bikeservice';
     HomeComponent,
     ContainerComponent,
     LegoComponent,
+    PortfolioLegoComponent,
     TeamComponent
   ],
   imports: [
@@ -32,6 +35,7 @@ import { BikeService } from './bike/bikeservice';
   ],
   providers: [
     LegoService,
+    PortfolioLegoService,
     BikeService
   ],
   exports: [
