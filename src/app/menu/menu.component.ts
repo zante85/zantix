@@ -9,7 +9,7 @@ import { MenuService } from './menuservice';
 })
 
 export class MenuComponent {
-  title = 'zantix';
+  title = 'zante-brick';
   menus: Menu[];
   constructor(private menuservice: MenuService){
 

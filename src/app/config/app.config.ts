@@ -6,7 +6,7 @@ export let APP_CONFIG = new InjectionToken('app.config');
 
 export const AppConfig: IAppConfig = {
   routes: {
-    zantix: 'zantix',
+    zantix: 'zante-brick',
     error404: '404'
   },
   endpoints: {

@@ -6,13 +6,10 @@ import { ContainerRoutingModule } from './container-routing.module';
 
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { HomeComponent } from './home/home.component';
 import { ContainerComponent } from './container.component';
 import { LegoComponent } from './lego/lego.component';
 import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { TeamComponent } from './bike/team/team.component';
-import { BikeService } from './bike/bikeservice';
 import { PortfolioLegoService } from './portfoliolego/portofoliolegoservice';
 import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component';
 
@@ -20,11 +17,9 @@ import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component'
   declarations: [
     GalleryComponent,
     ContactsComponent,
-    HomeComponent,
     ContainerComponent,
     LegoComponent,
-    PortfolioLegoComponent,
-    TeamComponent
+    PortfolioLegoComponent
   ],
   imports: [
     CommonModule,
@@ -35,15 +30,12 @@ import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component'
   ],
   providers: [
     LegoService,
-    PortfolioLegoService,
-    BikeService
+    PortfolioLegoService
   ],
   exports: [
     GalleryComponent,
     ContactsComponent,
-    HomeComponent,
-    LegoComponent,
-    TeamComponent
+    LegoComponent
   ]
 })
 

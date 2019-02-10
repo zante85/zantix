@@ -14,7 +14,7 @@
         "dfine": "in progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "img/maniero/maniero.jpg",
-        "icon": "img/lego-icon-4.png",
+        "icon": "img/maniero/lego-icon.png",
         "text": null,
         "images": [
           "img/maniero/maniero.jpg"
@@ -27,7 +27,7 @@
         "dfine": "In Progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "img/presepe/wallpaper-lego-presepe-nativity.jpg",
-        "icon": "img/lego-icon-1.png",
+        "icon": "img/presepe/lego-icon.png",
         "text": null,
         "images": [
           "img/presepe/lego-presepe-nativity2.JPG",
@@ -45,7 +45,7 @@
         "dfine": "2017",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "img/plastico/wallpaper-lego-plastico-castle-pirates.jpg",
-        "icon": "img/lego-icon-2.png",
+        "icon": "img/plastico/lego-icon.png",
         "text": null,
         "images": [
           "img/plastico/lego-plastico-catle-pirates1.JPG"
@@ -58,7 +58,7 @@
         "dfine": "2014",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
         "backgroundimage": "img/tableau/wallpaper-lego-tableau-mariage.jpg",
-        "icon": "img/lego-icon-3.png",
+        "icon": "img/tableau/lego-icon.png",
         "text": null,
         "images": [
           "img/tableau/tableau-mariage-1.jpg"
