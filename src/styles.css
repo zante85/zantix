@@ -2,6 +2,8 @@ body,
 html {
   width: 100%;
   height: 100%;
+  background-image: url("img/background.png");
+  background-repeat: repeat-y;
 }
 
 body {
@@ -15,7 +17,6 @@ body {
 .content-section {
   padding-top: 3.5rem;
   padding-bottom: 2.5rem;
-  background-color: #E9B001;
 }
 
 .content-section-heading h2 {
