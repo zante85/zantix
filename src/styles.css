@@ -2,8 +2,8 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-image: url("img/background.png");
-  background-repeat: repeat-y;
+  background-image: url("img/background-yellow.jpg");
+  background-repeat: repeat;
 }
 
 body {
@@ -81,8 +81,13 @@ a:hover, a:focus, a:active {
   font-weight: 700;
 }
 
-.bg-primary {
+.bg-primary-2 {
   background-color: #1D809F !important;
+}
+
+.bg-primary {
+  background-image: url("img/background-blue.jpg");
+  background-repeat: repeat;
 }
 
 .text-primary {
