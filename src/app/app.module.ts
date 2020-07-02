@@ -26,7 +26,7 @@ import { Constants } from './config/constants';
     HttpModule,
     ContainerModule,
     AppRoutingModule,
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [
     { provide: APP_CONFIG, useValue: AppConfig },

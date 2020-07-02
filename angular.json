@@ -19,19 +19,31 @@
             "assets": [
               "src/assets",
               "src/img",
+              "src/fonts",
               "src/json-moc",
               "src/favicon.ico"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/css/animate.css",
+              "src/css/flaticon.css",
+              "src/css/hero-slider.css",
+              "src/css/swiper.min.css",
+              "src/css/bootstrap-select.min.css",
+              "src/css/prettyPhoto.css",
+              "src/css/owl.carousel.css",
               "src/styles.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/tether/dist/js/tether.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/custom_js/zantix.js"
+              //"src/custom_js/zantix.js",
+              "src/custom_js/all.js",
+              "src/custom_js/custom.js",
+              "src/custom_js/main.js",
+              "src/custom_js/swiper.min.js"
             ]
           },
           "configurations": {
