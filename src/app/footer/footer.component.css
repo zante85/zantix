@@ -1,22 +1,193 @@
-footer.footer {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+/*------------------------------------------------------------------
+  FOOTER
+-------------------------------------------------------------------*/
+
+.cac {
+  background-color: #232323;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
-footer.footer .social-link {
-  display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
-  background-color: #E9B001;
-  -webkit-transition: background-color 0.15s ease-in-out;
-  transition: background-color 0.15s ease-in-out;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+.cac:hover a h3 {
+  color: #fff !important;
 }
 
-footer.footer .social-link:hover {
-  background-color: #E9B001;
+.cac a h3 {
+  color: #999;
+}
+
+.cac h3 {
+  padding: 60px 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: !important;
+}
+
+.footer {
+  padding: 90px 0 80px !important;
+  color: #999;
+  background-color: #1f1f1f;
+}
+
+.subscribe-text{
+margin: 0 auto 40px;
+max-width: 610px;
+text-align: center;
+width: 100%;
+}
+.subscribe-text h3{
+font-size: 34px;
+color: #fff;
+font-weight: 600;
+}
+.subscribe-form{
+margin: auto;
+max-width: 400px;
+position: relative;
+width: 100%;
+}
+
+.subscribe-form .form-control {
+  border: none;
+  border-radius: 0px;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.subscribe-form .subscribe-btn{
+background: #E65100;
+border: none;
+border-radius: 0px;
+color: #ffffff;
+display: inline-block;
+font-size: 30px;
+line-height: 0;
+font-weight: 600;
+height: 50px;
+padding: 0 35px;
+position: absolute;
+right: -1px;
+text-transform: uppercase;
+top: 0;
+}
+.subscribe-form .subscribe-btn:hover{
+background: #333333;
+}
+
+.copyrights {
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0px;
+  overflow: hidden;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  float: none;
+}
+
+.footer-distributed .footer-links {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  margin: 0 10px 0 10px;
   text-decoration: none;
+}
+
+.footer-distributed .footer-company-name {
+  font-weight: 300;
+  margin: 0 10px;
+  color: #666;
+  padding: 0;
+text-align: center;
+}
+
+.footer-distributed .footer-company-name a{
+color: #ffffff;
+}
+
+.footer-distributed .footer-company-name a:hover{
+color: #e65100;
+}
+
+
+
+
+/* Footer right */
+
+.footer-distributed .footer-right {
+  float: none;
+}
+
+.footer-distributed .widget-title p {
+  padding-top: 40px;
+}
+
+/* The search form */
+
+.footer-distributed form {
+  position: relative;
+}
+
+.footer-distributed form input {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #181818;
+  border: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: normal;
+  color: #999;
+  width: 100%;
+  padding: 18px 50px 18px 18px;
+}
+
+.footer-distributed form input:focus {
+  outline: none;
+}
+
+
+/* Changing the placeholder color */
+
+.footer-distributed form input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.footer-distributed form input::-moz-placeholder {
+  opacity: 1;
+  color: #999;
+}
+
+.footer-distributed form input:-ms-input-placeholder {
+  color: #999;
+}
+
+
+/* The magnify glass icon */
+
+.footer-distributed form i {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: #999;
+  font-size: 18px;
+  margin-top: 6px;
 }
