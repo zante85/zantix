@@ -3,7 +3,7 @@
 
     <div class="row">
       <div class="col">
-        <div id="contact">
+        <div id="contactBox">
           <div class="form-container" style="margin-top:auto;margin-bottom:auto;">
             <div class="contactcontainersx">
               <div class="labelContact">{{contact.nome}} {{contact.cognome}}</div>
@@ -50,7 +50,7 @@
       </div>
 
       <div class="col">
-        <form id="contact" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+        <form id="contactBox" [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
           <div class="form-container">
             <div>
               <h2>Contattami</h2>

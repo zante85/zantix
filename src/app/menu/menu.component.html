@@ -1,16 +1,27 @@
-
-<div class="collapse navbar-collapse justify-content-end" id="navbarApp">
-    <ul class="navbar-nav">
-        <div *ngFor="let menu of menus">
-            <li *ngIf="!menu.sub;else other_content" class="sidebar-brand">
-                <a class="nav-link" href="{{menu.url}}">
-                    {{menu.name}}
-                </a>
-            </li>
+<header class="header header_style_01">
+    <nav class="navbar header-nav navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/sample/logos/logo-app.png" alt="image"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarApp"
+                aria-controls="navbarApp" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarApp">
+                <ul class="navbar-nav">
+                    <div *ngFor="let menu of menus">
+                        <li *ngIf="!menu.sub;else other_content" class="sidebar-brand">
+                            <a class="nav-link" href="{{menu.url}}">
+                                {{menu.name}}
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </ul>
-</div>
-
+    </nav>
+</header>
 
 <!--<a class="menu-toggle rounded" (click)="attivamenu=!attivamenu" href="#">
     <i class="fa" [ngClass]="{'fa-bars': !attivamenu, 'fa-times': attivamenu}"></i>
