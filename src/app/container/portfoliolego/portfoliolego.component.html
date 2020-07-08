@@ -1,46 +1,25 @@
 <div id="portfolio" class="section lb">
-  <div class="container">
+  <div *ngFor="let lego of legos" class="container">
       <div class="section-title text-center">
-          <h3>The App Features</h3>
-          <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum<br>auctor nisi elit consequat ipsum, nec sagittis sem!</p>
+          <h3>{{lego.titleLong}}</h3>
+          <p class="lead">{{lego.descriptionLong}}</p>
       </div><!-- end title -->
 
-      <div class="row">
-
-        <div *ngFor="let argument of elementspage[currentPage-1];" class="col-md-4">
-          <div class="services-inner-box" (click)="openGallery(argument)">
-
-            <div class="services-inner-box">
-              <div class="ser-icon">
-                <i class="flaticon-new-file effect-1"></i>		
-              </div>
-              <h2>{{argument.title}}</h2>
-              <p>{{argument.description}}</p>
-              <!--<img class="img-fluid" src="{{argument.backgroundimage}}" alt="{{argument.title}}">-->
-            </div>
-          
-          </div>
+      <div class="row no-gutters">
+        <div *ngFor="let argument of elementspage[currentPage-1];" class="col-lg-6">
+          <a class="portfolio-item" (click)="openGallery(argument)">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>{{argument.title}}</h2>
+                <p class="mb-0">{{argument.description}}</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="{{argument.backgroundimage}}" alt="{{argument.title}}">
+          </a>
         </div>
+        
       </div>
 
   </div><!-- end container -->
 </div><!-- end section -->
-
-
-<div *ngFor="let lego of legos" class="container">
-    <div class="row no-gutters">
-      <div *ngFor="let argument of elementspage[currentPage-1];" class="col-lg-6">
-        <a class="portfolio-item" (click)="openGallery(argument)">
-          <span class="caption">
-            <span class="caption-content">
-              <h2>{{argument.title}}</h2>
-              <p class="mb-0">{{argument.description}}</p>
-            </span>
-          </span>
-          <img class="img-fluid" src="{{argument.backgroundimage}}" alt="{{argument.title}}">
-        </a>
-      </div>
-      
-    </div>
-  </div>
 

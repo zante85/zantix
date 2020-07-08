@@ -78,9 +78,6 @@
         right: 0;
         border-radius: 0;
     }
-	.swiper-slide.swiper-slide-active .post-media img{
-		border-radius: 25px;
-	}
 	.mobilescreen-image{
 		height: 409px;
 		width: 242px;
@@ -356,9 +353,6 @@
 	.mobilescreen-image {
 		display: none;
 	}
-	.swiper-slide.swiper-slide-active .post-media img{
-		border-radius: 0px;
-	}
 }
 
 @media (max-width: 600px) {
@@ -488,8 +482,5 @@
 	}
 	.mobilescreen-image {
 		display: none;
-	}
-	.swiper-slide.swiper-slide-active .post-media img{
-		border-radius: 0px;
 	}
 }
