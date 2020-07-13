@@ -1,0 +1,22 @@
+[{
+    "id": "0",
+    "title": "Zante Brick",
+    "description": "Questo non è un giocattolo. È un sistema sofisticato di mattoncini a incastro.</p> Se vi state chiedendo cosa significhi la parola Lego e qual è la sua origine ecco soddisfatta la vostra curiosità: La parola LEGO è un gioco di parole e deriva dalla frase danese LEG GODT che significa gioca bene",
+    "img": "img/home-icon.png",
+    "classBackground": "#page-top"
+},
+{
+    "id": "1",
+    "title": "Zante Brick 2",
+    "description": "Questo non è un giocattolo. È un sistema sofisticato di mattoncini a incastro.</p> Se vi state chiedendo cosa significhi la parola Lego e qual è la sua origine ecco soddisfatta la vostra curiosità: La parola LEGO è un gioco di parole e deriva dalla frase danese LEG GODT che significa gioca bene",
+    "img": "img/home-icon.png",
+    "classBackground": "#page-top"
+},
+{
+    "id": "2",
+    "title": "Zante Brick 3",
+    "description": "Questo non è un giocattolo. È un sistema sofisticato di mattoncini a incastro.</p> Se vi state chiedendo cosa significhi la parola Lego e qual è la sua origine ecco soddisfatta la vostra curiosità: La parola LEGO è un gioco di parole e deriva dalla frase danese LEG GODT che significa gioca bene",
+    "img": "img/home-icon.png",
+    "classBackground": "#page-top"
+}
+]

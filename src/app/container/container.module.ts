@@ -12,6 +12,8 @@ import { LegoService } from './lego/legoservice';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PortfolioLegoService } from './portfoliolego/portofoliolegoservice';
 import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselService } from './carousel/carouselservice';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component'
     ContactsComponent,
     ContainerComponent,
     LegoComponent,
-    PortfolioLegoComponent
+    PortfolioLegoComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +33,8 @@ import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component'
   ],
   providers: [
     LegoService,
-    PortfolioLegoService
+    PortfolioLegoService,
+    CarouselService
   ],
   exports: [
     GalleryComponent,

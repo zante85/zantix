@@ -9,6 +9,13 @@
 		"id": "1",
 		"name": "Lego",
 		"icon": "img/lego-icon.png",
+    "url": "#project",
+    "sub": null
+	},
+	{
+		"id": "2",
+		"name": "Progetti",
+		"icon": "img/lego-icon.png",
     "url": "#portfolio",
     "sub": null
 	},
