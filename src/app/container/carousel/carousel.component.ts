@@ -11,13 +11,11 @@ import { Carousel } from '../carousel/carousel';
 
 export class CarouselComponent {
   images: Carousel[];
-  elementspage: any[][];
-  currentImages: String[];
-  popupTitle: String;
-  paginations: Number[];
-  currentPage: number;
-  constructor(private legoservice: CarouselService) {
-    this.currentPage = 1;
+
+  constructor(private carouselService: CarouselService) {
+    this.carouselService.getImages().subscribe((images: Array<Carousel>) => {
+      this.images = images;
+  });
   }
 
  
