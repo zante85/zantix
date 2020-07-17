@@ -12,7 +12,7 @@
                 <ul class="navbar-nav">
                     <div *ngFor="let menu of menus">
                         <li *ngIf="!menu.sub;else other_content" class="sidebar-brand">
-                            <a class="nav-link" href="{{menu.url}}">
+                            <a class="nav-link" (click)="scrollToElement(menu.url)">
                                 {{menu.name}}
                             </a>
                         </li>

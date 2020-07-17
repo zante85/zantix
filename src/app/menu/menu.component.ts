@@ -20,6 +20,11 @@ export class MenuComponent {
 
   }
 
+  scrollToElement(nomeElemento): void {
+    const element = document.querySelector(nomeElemento)
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
   changeContainer(name:string){
     console.log(name);
 
