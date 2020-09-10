@@ -4,5 +4,5 @@ export class Carousel {
     subtitle: string;
     description: string;
     img: string;
-    classBackground: string;
+    background: string;
 }

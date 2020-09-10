@@ -1,23 +1,13 @@
-<ul class="cd-hero__slider">
-  <li *ngFor="let carous of images" class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
-    <div class="cd-hero__content cd-hero__content--half-width">
-      <h2>{{carous.title}}</h2>
-      <p>{{carous.subtitle}}</p>
-      {{carous.description}}
-    </div> <!-- .cd-hero__content -->
-  
-    <div class="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
-      <img src="{{carous.img}}" class="img-fluid" alt="tech 1">
-    </div> <!-- .cd-hero__content -->
-  </li>
-</ul> <!-- .cd-hero__slider -->
-  
-  <div class="cd-hero__nav js-cd-nav">
-  <nav>
-    <span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
-    
-    <ul>
-      <li *ngFor="let carous of images" class="cd-selected"><a href="#0">{{carous.id}}</a></li>
-    </ul>
-  </nav> 
-  </div>
+<div>
+  <ngb-carousel>
+    <ng-template *ngFor="let carous of images" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img src="{{carous.background}}" alt="{{carous.title}}">
+      </div>
+      <div class="carousel-caption">
+        <h3>{{carous.title}}</h3>
+        <p>{{carous.subtitle}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
