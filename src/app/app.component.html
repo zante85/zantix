@@ -1,14 +1,16 @@
 <!-- LOADER -->
 <div id="preloader">
-  <img class="preloader" src="img/sample/loader-app.gif" alt="">
+  <mat-progress-spinner
+        [color]="red"
+        [mode]="determinate"
+        [value]="40">
+    </mat-progress-spinner>
 </div> 
 
-
-  <app-menu></app-menu>
-  <router-outlet></router-outlet>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>
-
 <!-- end footer -->
 
 <!-- end copyrights -->

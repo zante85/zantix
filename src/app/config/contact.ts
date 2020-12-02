@@ -7,4 +7,5 @@ export class Contact {
     brickset: string;
     strava: string;
     linkedin: string;
+    youtube:string;
 }

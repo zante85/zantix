@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 import { APP_CONFIG, AppConfig } from './config/app.config';
 
 import { MenuService } from './menu/menuservice';
@@ -14,12 +15,14 @@ import { Error404Component } from './error404/error-404.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { Constants } from './config/constants';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     MenuComponent,
-    Error404Component
+    Error404Component,
+    MatProgressSpinner
   ],
   imports: [
     BrowserModule,
