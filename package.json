@@ -36,7 +36,9 @@
     "rxjs": "^6.5.5",
     "rxjs-compat": "^6.5.5",
     "tether": "^1.4.7",
-    "zone.js": "^0.10.3"
+    "zone.js": "^0.10.3",
+    "node-forge": ">=0.10.0",
+    "webpack-subresource-integrity": ">=1.5.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.9",
