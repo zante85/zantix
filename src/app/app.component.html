@@ -1,16 +1,28 @@
 <!-- LOADER -->
 <div id="preloader">
-  <mat-progress-spinner
-        [color]="red"
-        [mode]="determinate"
-        [value]="40">
-    </mat-progress-spinner>
 </div> 
 
-<app-menu></app-menu>
+<div class="loading">
+  <div class="loader">
+    <mat-progress-spinner
+    style="animation-name: mat-progress-spinner-stroke-rotate-100; 
+    stroke-dasharray: 282.743px;
+    stroke-width: 10%;
+    transition-property: stroke;
+    animation-duration: 12000ms;
+    animation-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
+    animation-iteration-count: infinite;"
+    [color]="red"
+    [mode]="determinate">
+    </mat-progress-spinner>
+  </div>
+</div>
+
+
+<!--<app-menu></app-menu>
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<app-footer></app-footer>-->
 <!-- end footer -->
 
 <!-- end copyrights -->

@@ -2,11 +2,11 @@
     <div *ngFor="let lego of legos" class="container">
         <div class="section-title text-center">
             <h3>{{lego.title}}</h3>
-            <p class="lead">{{lego.description}}</p>
-        </div><!-- end title -->
+            <!--<p class="lead">{{lego.description}}</p>-->
+        </div>
   
         <div class="row">
-            <div *ngFor="let argument of elementspage[currentPage-1];" class="col-md-2 col-sm-6">
+            <div *ngFor="let argument of elementspage[currentPage-1];" style="margin-left: auto; margin-right: auto;" class="col-md-2 col-sm-6">
                 <div class="our-team">
                     <div class="team_img">
                         <img src="{{argument.icon}}">
@@ -17,7 +17,7 @@
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                         </ul>-->
                     </div>
-                    <div class="team-content">
+                    <div  class="team-content">
                         <h3 class="title">{{argument.title}}</h3>
                         <span class="post">{{argument.dinizio}} - {{argument.dfine}}</span>
                     </div>

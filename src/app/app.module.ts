@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { APP_CONFIG, AppConfig } from './config/app.config';
 
 import { MenuService } from './menu/menuservice';
@@ -29,7 +30,8 @@ import { Constants } from './config/constants';
     HttpModule,
     ContainerModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: APP_CONFIG, useValue: AppConfig },

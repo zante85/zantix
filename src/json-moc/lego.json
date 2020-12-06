@@ -1,25 +1,25 @@
 [
   {
     "id": "1",
-    "title": "Mondo Lego",
-    "titleLong": "Portfolio Lego",
-    "description": "Qui di seguito alcune mie creazioni Lego",
-    "descriptionLong": "Qui di seguito alcune mie creazioni Lego",
+    "title": "Progetti",
+    "titleLong": "Portfolio",
+    "description": "Qui di seguito una carellata di foto di tutte le mie creazioni Custom LEGO",
+    "descriptionLong": "Qui di seguito una carellata di foto di tutte le mie creazioni Custom LEGO",
     "backgroundimage": "/",
     "icon": null,
     "text": null,
     "elements": [
       {
         "id": "900",
-        "title": "Joker Manor",
+        "title": "Diorama Western",
         "dinizio": "2019",
-        "dfine": "in progress",
-        "description": "MOC per modo di dire. Maniero di Joker LEGO aggiunto di altri personaggi della Saga Batman e rese le rotaie motorizzate.",
-        "backgroundimage": "img/maniero/maniero.jpg",
-        "icon": "img/maniero/lego-icon.png",
+        "dfine": "2020",
+        "description": "Diorama con set Western e Indiani dell'anno 1996. Aggiunto qualche personaggio un pò più recente.",
+        "backgroundimage": "img/western/background.png",
+        "icon": "img/western/lego-icon.png",
         "text": null,
         "images": [
-          "img/maniero/maniero.jpg"
+          "img/western/01.png"
         ]
       },
       {
@@ -28,16 +28,16 @@
         "dinizio": "2017",
         "dfine": "In Progress",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam",
-        "backgroundimage": "img/presepe/wallpaper-lego-presepe-nativity.jpg",
+        "backgroundimage": "img/presepe/background.png",
         "icon": "img/presepe/lego-icon.png",
         "text": null,
         "images": [
-          "img/presepe/lego-presepe-nativity2.JPG",
-          "img/presepe/lego-presepe-nativity3.JPG",
-          "img/presepe/lego-presepe-nativity4.JPG",
-          "img/presepe/lego-presepe-nativity5.JPG",
-          "img/presepe/lego-presepe-nativity6.JPG",
-          "img/presepe/lego-presepe-nativity7.JPG"
+          "img/presepe/01.png",
+          "img/presepe/02.png",
+          "img/presepe/03.png",
+          "img/presepe/04.png",
+          "img/presepe/05.png",
+          "img/presepe/06.png"          
         ]
       },
       {
@@ -46,7 +46,7 @@
         "dinizio": "2015",
         "dfine": "2017",
         "description": "Questa MOC è in verità un paesaggio costruito con vinavil, carta igienica e colori a tempera, fatto per collocare tutte le mie LEGO di quando ero bambino. Ovviamente all'interno ci sono delle decorazioni MOC come Alberi, accessori ecc..",
-        "backgroundimage": "img/plastico/wallpaper-lego-plastico-castle-pirates.jpg",
+        "backgroundimage": "img/plastico/background.png",
         "icon": "img/plastico/lego-icon.png",
         "text": null,
         "images": [
