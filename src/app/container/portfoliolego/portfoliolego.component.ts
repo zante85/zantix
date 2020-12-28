@@ -1,9 +1,8 @@
 import { Component, Inject } from '@angular/core';
 import { Lego } from '../lego/lego';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GenericElement } from '../lego/genericelement';
 import { PortfolioLegoService } from './portofoliolegoservice';
-import { GalleryComponent } from '../gallery/gallery.component';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-portfolio',
@@ -18,7 +17,9 @@ export class PortfolioLegoComponent {
   popupTitle: String;
   paginations: Number[];
   currentPage: number;
-  constructor(private legoservice: PortfolioLegoService) {
+  closeResult = '';
+
+  constructor(private legoservice: PortfolioLegoService, private modalService: NgbModal) {
     this.currentPage = 1;
     this.legoservice.getLegos().subscribe((legos: Array<Lego>) => {
       console.log(legos);
@@ -70,7 +71,26 @@ export class PortfolioLegoComponent {
     this.popupTitle = element.title;
   }
 
+  openGallery(content, element: GenericElement) {
+    console.log(element.title);
+    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
   changeContainer(name: string) {
     console.log(name);
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
   }
 }

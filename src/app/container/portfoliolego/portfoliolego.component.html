@@ -1,3 +1,28 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
 <div id="portfolio" class="section lb">
   <div *ngFor="let lego of legos" class="container">
       <div class="section-title text-center">
@@ -7,7 +32,7 @@
 
       <div class="row no-gutters">
         <div *ngFor="let argument of elementspage[currentPage-1];" class="col-lg-6">
-          <a class="portfolio-item" (click)="openGallery(argument)">
+          <a class="portfolio-item" (click)="openGallery(content,argument)">
             <span class="caption">
               <span class="caption-content">
                 <h2>{{argument.title}}</h2>
@@ -16,6 +41,7 @@
               </span>
             </span>
             <img class="img-fluid" src="{{argument.backgroundimage}}" alt="{{argument.title}}">
+            <ngbd-modal-options></ngbd-modal-options>
           </a>
         </div>
         

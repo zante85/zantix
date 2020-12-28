@@ -9,7 +9,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ContainerComponent } from './container.component';
 import { LegoComponent } from './lego/lego.component';
 import { LegoService } from './lego/legoservice';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PortfolioLegoService } from './portfoliolego/portofoliolegoservice';
 import { PortfolioLegoComponent } from './portfoliolego/portfoliolego.component';
 import { CarouselComponent } from './carousel/carousel.component';

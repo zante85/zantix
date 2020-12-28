@@ -13,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContainerModule } from './container/container.module';
 import { AppRoutingModule } from './app-routing.module';
 import { Error404Component } from './error404/error-404.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Constants } from './config/constants';
 
 

@@ -13,6 +13,7 @@ export class PortfolioLegoService{
 
   constructor(public http:Http) {
   }
+  
 
   private handleError(error: any) {
     if (error instanceof Response) {
