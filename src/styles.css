@@ -12,7 +12,9 @@ body {
 }
 
 body.demos .section {
-  background: url(img/sample/bg.png) repeat top center #f2f3f5;
+  background-color: #A9A9A9  ;
+  background: repeat top center #f2f3f5;
+  /*background: url(img/sfondo.png) repeat top center #f2f3f5;*/
 }
 
 body.demos .section-title img {
@@ -487,7 +489,7 @@ top: 0px;
 -------------------------------------------------------------------*/
 
 .top-banner{
-background: url(img/sample/bg-img.jpg) bottom center no-repeat #e65100;
+background: url(img/bg.jpg) bottom center no-repeat #e65100;
 height: 100%;
 display: -webkit-box;
 display: -ms-flexbox;
@@ -879,11 +881,10 @@ transition: all .3s ease-in-out;
 }
 
 .colon1:hover, .colon2:hover, .colon3:hover, .colon4:hover{
-background: url(img/sample/01.gif) no-repeat center top;
-background-size: cover;
-background-position: 0px 75px;
+  background: no-repeat center top;
+  background-size: cover;
+  background-position: 0px 75px;
 }
-
 
 /*------------------------------------------------------------------
   TESTIMONIALS
@@ -973,16 +974,16 @@ display: block;
 margin: 5px 7px;
   border-radius: 50%;
   border: 4px solid #333333;
-  background: url("img/sample/img-2.jpg") no-repeat;
   background-size: cover;
+  background: no-repeat;
   transition: all 0.3s ease-in-out 0s;
 }
 .owl-theme .owl-dots .owl-dot:nth-child(2) span{
-  background: url("img/sample/img-1.jpg") no-repeat;
+  background: no-repeat;
   background-size: cover;
 }
 .owl-theme .owl-dots .owl-dot:nth-child(3) span{
-  background: url("img/sample/img-3.jpg") no-repeat;
+  background: no-repeat;
   background-size: cover;
 }
 .owl-theme .owl-dots.clickable .owl-dot:hover span{
@@ -1257,7 +1258,7 @@ font-weight: 600;
 }
 
 .download-bg{
-background: url(img/sample/d-bg.jpg) no-repeat center;
+background: no-repeat center;
 background-size: cover;
 position: relative;
 }
@@ -1434,7 +1435,7 @@ hr.invis1 {
 }
 
 .mobilescreen-image{
-background-image: url(img/sample/app-mobile.png);
+background-image: url(img/app-mobile.png);
 background-repeat: no-repeat;
 background-size: 100% 100%;
 display: block;
@@ -1483,7 +1484,6 @@ border-radius: 60px;
   width: 100%;
   height: 100%;
   position: relative;
-  /*background: url("img/sample/code.jpg") no-repeat;*/
 }
 
 .design-wrapper {
@@ -1504,7 +1504,6 @@ border-radius: 60px;
   position: relative;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  /*background: url("img/sample/design.jpg") no-repeat;*/
 }
 
 
@@ -1848,7 +1847,9 @@ border-bottom: 1px solid #ffffff;
 }
 
 #contact {
-  background: url(img/sample/bg.png) no-repeat center center #333333;
+  background-color: #A9A9A9  ;
+  background: no-repeat center center #333333;
+  /*background: url(img/sfondo.png) no-repeat center center #333333;*/
 }
 
 .pdi{
@@ -2154,13 +2155,13 @@ clear:both;
    left: 0;
    width: 100%;
    height: 100%;
-   background: url(img/sample/phonebg_1.png) center top no-repeat;
+   background: url(img/phonebg.png) center top no-repeat;
    background-position-x: 0px;
    z-index: 2;
    overflow: hidden;
 }
 .highlights-phone.wht .phone-holder #fon{
-  background: url(img/sample/phonebg_1.png) center top no-repeat;
+  background: url(img/phonebg.png) center top no-repeat;
    background-position-x: 0px;
 }
 .hgi{

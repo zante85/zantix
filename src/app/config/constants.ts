@@ -2,7 +2,7 @@ import { Contact } from "./contact";
 
 export class Constants {
 
-    public static COPYRIGHT = "zante85";
+    public static COPYRIGHT = "zantix-brick";
     public static LINK_FACEBOOK = "https://www.facebook.com/zante85";
     public static LINK_STRAVA = "https://www.strava.com/athletes/8248680";
     public static LINK_YOUTUBE = "https://www.youtube.com/channel/UC1Dn1T7x6GUa-momy4GcT_g";
