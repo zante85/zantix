@@ -140,11 +140,22 @@
         "dinizio": "2014",
         "dfine": "2014",
         "description": "La mia prima custom Lego per il mio matrimonio. Molti pezzi Lego sono stati pitturati con una bomboletta spray viola.",
-        "backgroundimage": "img/tableau/wallpaper-lego-tableau-mariage.jpg",
+        "backgroundimage": "img/tableau/background.png",
         "icon": "img/tableau/lego-icon.png",
         "text": null,
         "images": [
-          "img/tableau/tableau-mariage-1.jpg"
+          "img/tableau/01.png",
+          "img/tableau/02.png",
+          "img/tableau/03.png",
+          "img/tableau/04.png",
+          "img/tableau/05.png",
+          "img/tableau/06.png",
+          "img/tableau/07.png",
+          "img/tableau/08.png",
+          "img/tableau/09.png",
+          "img/tableau/10.png",
+          "img/plastico/tableau-mariage-1.jpg",
+          "img/plastico/wallpaper-lego-tableau-mariage.jpg"
         ]
       }
     ]
